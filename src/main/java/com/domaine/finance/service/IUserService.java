@@ -7,4 +7,5 @@ import com.domaine.finance.dto.UserDto;
 public interface IUserService {
 
 	public List<UserDto> getAll() ;
+	public boolean save(UserDto user) ;
 }

@@ -56,7 +56,7 @@ public class HibernateUtil {
                 }
 
                 settings.put(AvailableSettings.DIALECT, "org.hibernate.dialect.MySQL8Dialect");
-                settings.put(AvailableSettings.HBM2DDL_AUTO, "create");
+                settings.put(AvailableSettings.HBM2DDL_AUTO, "update");
                 settings.put(AvailableSettings.SHOW_SQL, "true");
                 settings.put(AvailableSettings.FORMAT_SQL, "true");
                 settings.put(AvailableSettings.CURRENT_SESSION_CONTEXT_CLASS, "thread");
