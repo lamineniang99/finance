@@ -16,5 +16,11 @@ public class UserService implements IUserService{
 		
 		return UserMapper.listUserEntityToUserDto(userDao.list(new UserEntity()));
 	}
+	
+	@Override
+	public boolean save(UserDto user) {
+		
+		return userDao.save(UserMapper.toUserEntity(user));
+	}
 
 }
